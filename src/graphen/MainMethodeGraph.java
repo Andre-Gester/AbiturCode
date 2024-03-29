@@ -4,10 +4,7 @@
  */
 package graphen;
 
-/**
- *
- * @author andre
- */
+
 public class MainMethodeGraph {
     
     public static void main(String[] args){
