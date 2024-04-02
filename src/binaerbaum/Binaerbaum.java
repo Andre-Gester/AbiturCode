@@ -1,6 +1,24 @@
 
 package binaerbaum;
-/*Die Hauptklasse eines von rechts aufsteigend sortierten Binärbaums, in welcher 
+/*
+Ein Baum ist eine abstrakte Datenstruktur, welcher aus einer Wurzel, Knoten, Kanten und Blättern besteht,
+und in welcher Daten hierarchisch dargestellt werden können. 
+    Wurzel: 1. Knoten des Baumes, welcher selbst kein Kind eines anderen Knoten ist bzw. kein Elternteil 
+    besitzt.
+
+    Knoten: Die Objekte in der Hirarchie, in welchen ein zusätzlicher Inhalt gespeichert sein kann. 
+    Alle Knoten (außer die Wurzel) sind  Kinder eines anderen Knoten bzw. haben ein Elternteil.
+    Ein Knoten kann an sich beliebig viele Kinder haben. Ein Binärbaum ist definiert dadurch, dass alle 
+    Knoten maximal zwei Kinder haben.
+
+    Kante: Die Verbindungen zwischen den Knoten. Zwischen jedem Knoten und dessen Kindern gibt es
+    eine Kante. Kanten können an sich auch einen Wert zugeordnet haben, was die Datenstruktur für
+    uns zu einem Graphen macht. 
+
+    Blatt: Blätter sind die Knoten, welche ein Elternteil besitzen, aber keine Kinder. Also die 
+    Knoten die unten am Baum hängen.
+
+Die Hauptklasse eines von rechts aufsteigend sortierten (geordneten) Binärbaums, in welcher 
 die Methoden gestartet werden. 
 */
 public class Binaerbaum {
