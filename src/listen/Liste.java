@@ -46,5 +46,11 @@ public class Liste {
     public void ausgabe(){
         erster.ausgaberek();
     }
+
+    /* Um den ersten zu löschen, erster ersetzen durch erster.getNext();
+    */
+    public void loeschenErster(){
+        erster = erster.getNext();
+    }
 }
 
