@@ -3,6 +3,7 @@ package binaerbaum;
 /*
 Ein Baum ist eine abstrakte Datenstruktur, welcher aus einer Wurzel, Knoten, Kanten und Blättern besteht,
 und in welcher Daten hierarchisch dargestellt werden können. 
+Ein Baum ist eine spezielle Form eines Graphens.
     Wurzel: 1. Knoten des Baumes, welcher selbst kein Kind eines anderen Knoten ist bzw. kein Elternteil 
     besitzt.
 
