@@ -1,24 +1,34 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package graphen;
 
 /*
+Graphen als Datenstrukture können als eine allgemeinere Form von Bäumen angesehen werden. 
+Wie Bäume haben Graphen auch Knoten und Kanten. Es gibt allerdings keine Blätter oder Wurzel, da
+kein Ende oder Anfang der Datenstruktur bestimmt ist.
+    Knoten: Die Elemente, welche in einem Graphen miteinander verbunden sind.
+    Kanten: Die Verbindungen zwischen den Knoten können eine Richtung (gerichteter Graph), und/oder
+    einen Wert zugewisen haben (gewichteter Graph).
+    
+Zusammenhängend: Lässt sich jeder Knoten durch eine Kante erreichen so ist ein Graph zusammenhängend, 
+es sei denn ein Knoten lässt sich nur aus einer Richtung (im Falle eines ungerichteten Graphen) erreichen.
+In diesem Falle ist der Graph schwach-zusammenhängend.
 
-
+Zyklisch: Lässt sich von einem Startknoten aus genau dieser Startknoten wieder erreichen, 
+ohne dabei mehrmals die gleiche Kante 'benutzen' zu müssen, dann ist ein Graph zyklisch. 
+(Bascially wenn man im Kreis gehen kann)
  */
 public class Graph {
     
     private String identifier;
     /*Der Graph wird implementiert durch eine Adjazenzmatrix, in welcher vermerkt ist
-    ob man/wie lange man braucht um von einem Inhalt zum nächsten zu gelangen. (Boolean
+    ob man/wie lange man braucht um von einem Inhalt zum nächsten zu gelangen. (boolean
     oder int Matrix)
     Es gibt zwei zentrale Attribute:
     1. Ein Array mit allen Inhalten. Hier werden alle Inhalte gespeichert und indirekt
     auch jedem Inhalt ein Index zugewisen.
     2. Die Adjazenzmatrix. Hier wird die Distanz/die Verbindung zwischen allen Inhalten
     (über deren Indexe) gespeichert.
+
+    Hier: Ungeordnet, aber Gewichtet
     */
     private Inhalt[] arrayInhalt;
     private int[][]adj;
