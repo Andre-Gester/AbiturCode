@@ -1,5 +1,8 @@
 Form: gerade Anzahl an 1 + 2 + gerade Anzahl an 1 
 EBNF: 
 Alphabet = “1“ | “2“ ;
-2A = “A” , “A” ;
-wort = 2A , { 2A } , “B” , 2A , { 2A } ;
+2A = “A”  “A” ;
+wort = 2A  { 2A }  “B”  2A  { 2A } ;
+
+(* Kommentar: Ich bin mir unsicher ob man zwischen die einzelnen Zeichen z.B. "A""A" ein Komma setzen
+muss oder nicht.*)
