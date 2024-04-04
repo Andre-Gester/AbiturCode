@@ -1,0 +1,33 @@
+1: DLOAD 8
+2: STORE 1 --a
+3: DLOAD 5
+4: STORE 2 --b
+5: DLOAD 1 
+6: STORE 3 --z
+7: STORE 4 --n
+8: DLOAD 2 -- 2, Start of Query
+9: MULT 2 -- *b
+10: SUB 1 -- -a, End of Query
+11: JLE 15 -- FALSE
+12: LOAD 1 -- a Start of True
+13: SUB 2 -- -b
+14: STORE 2 -- End of True
+15: LOAD 2 --Start of loop
+16: JLE 30 -- condition for loop
+17: LOAD 3 -- z=z*a
+18: MULT 1
+19: STORE 3
+20: LOAD 4 -- n=n*b
+21: MULT 2
+22: STORE 4
+23: DLOAD -1 -- a=a-1
+24: ADD 1
+25: STORE 1
+26: DLOAD -1 -- b=b-1
+27: ADD 2
+28: STORE 2 
+29: JUMP 15 -- End of loop
+30: LOAD 3 -- z=z/n
+31: DIV 4
+32: STORE 3 
+33: END -- z=a!/(a−b)!b!, wobei a−2b>0,Zähler>0
