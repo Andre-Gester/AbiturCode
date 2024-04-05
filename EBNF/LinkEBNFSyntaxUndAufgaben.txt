@@ -1,2 +1,2 @@
-Dies ist der Link zu einem Dokument, in welchem der EBNF Syntax und mögliche Aufgaben zu Automaten stehen.
+Dies ist der Link zu einem Dokument, in welchem der EBNF Syntax und mögliche Aufgaben zu Automaten oder zu formalen Sprachen stehen.
 https://docs.google.com/document/d/1ni7d18oGRpT1CjfEJXIEiBHyZGsnSYqj/edit?usp=sharing&ouid=104216871373832515113&rtpof=true&sd=true
