@@ -33,4 +33,11 @@ public abstract class LE {
     public LE sortierteinfrek(Inhalt i){
         return new Knoten(i, this);
     }
+
+
+    /* Wenn der Inhalt in keinem Knoten gefunden wurde sollte irgendeine Fehlermeldung zurückkommen
+    */
+    public LE loeschenGRek(Inhalt i){
+        System.out.println("Fehler: Knoten wurde nicht gefunden");
+        return null;
 }
