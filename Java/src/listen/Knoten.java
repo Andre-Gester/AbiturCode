@@ -49,7 +49,20 @@ public class Knoten extends LE {
         /*this.*/data.ausgeben();
         next.ausgaberek();
     }
-    
+
+
+    /*Jeder Knoten muss schauen ob er selbst der gesuchte Inhalt ist, wenn dies der Fall ist soll
+    der Knoten, statt sich selbst, seinen next zurückgeben, damit der Knoten selbst aus der Liste
+    genommen wird. 
+    */
+    @Override
+    public LE loeschenGRek(Inhalt i){
+        if (/*this.*/data.equals(i)){
+            System.out.println(i.ausgabe +" wurde gelöscht");
+            return next;
+        }
+        return this;
+    }
     
 
 //getter und setter
