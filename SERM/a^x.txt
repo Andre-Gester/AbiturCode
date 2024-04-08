@@ -1,13 +1,13 @@
-1: DLOAD 7-- Programm soll a^x berrechnen bsp. 7^3 und Ergebnis in Register 2 und Akkumulator
+1: DLOAD 7-- Programm soll a^x berrechnen bsp. 7^3 und Ergebnis in Register 2 und Akkumulator, Voraussetzung: x>=0
 2: STORE 0 -- a
 3: DLOAD 3
 4: STORE 1 --x
-5: DLOAD 3 -- Anfang der Schleifenbedinung 
+5: LOAD 1 -- Anfang der Schleifenbedinung 
 6: JLE 14 -- Schleife überspringen, wenn x<=0
-7: LOAD 1 -- a = a*a
-8: MULT 1
+7: LOAD 0 -- a = a*a
+8: MULT 0
 9: STORE 2 -- Ergebnis
-10: DLOAD -1 -- a = a + (-1)
+10: DLOAD -1 -- x = x + (-1)
 11: ADD 1
 12: STORE 1
 13: JUMP 5 -- Ende der Schleife
