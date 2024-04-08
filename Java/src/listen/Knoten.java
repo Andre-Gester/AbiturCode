@@ -20,8 +20,8 @@ public class Knoten extends LE {
     sich selbst zurückgibt.
     */
     @Override
-    public LE hinteneinfrek(Inhalt i){
-    next = next.hinteneinfrek(i);
+    public LE hintenEinfRek(Inhalt i){
+    next = next.hintenEinfRek(i);
     return this;   
     }   
     
@@ -32,11 +32,11 @@ public class Knoten extends LE {
     zurück.
     */
     @Override
-    public LE sortierteinfrek(Inhalt i){
+    public LE sortiertEinfRek(Inhalt i){
         if (this.data.getDatavar3()>i.getDatavar3()){   
             return new Knoten(i,this);              
         }                                               
-        next = next.sortierteinfrek(i);                
+        next = next.sortiertEinfRek(i);                
         return this;                                    
         
     }
@@ -45,9 +45,9 @@ public class Knoten extends LE {
     /*¯\_(ツ)_/¯ einfach rekursiv durchlaufen
     */
     @Override
-    public void ausgaberek(){
+    public void ausgabeRek(){
         /*this.*/data.ausgeben();
-        next.ausgaberek();
+        next.ausgabeRek();
     }
 
 
@@ -58,7 +58,8 @@ public class Knoten extends LE {
     @Override
     public LE loeschenGRek(Inhalt i){
         if (/*this.*/data.equals(i)){
-            System.out.println(i.ausgabe +" wurde gelöscht");
+            i.ausgeben();
+            System.out.print(" wurde gelöscht");
             return next;
         }
         return this;
@@ -74,6 +75,7 @@ public class Knoten extends LE {
         this.data = data;
     }
 
+    @Override
     public LE getNext() {
         return next;
     }

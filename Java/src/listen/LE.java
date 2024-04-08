@@ -14,14 +14,14 @@ public abstract class LE {
     Knoten zurück, welcher den Abschluss "recycled" und als nächsten hat.
     Der neue Knoten wird dann durch den zuvor letzten Knoten als next benutzt.
     */
-    public LE hinteneinfrek(Inhalt i){
+    public LE hintenEinfRek(Inhalt i){
         return new Knoten(i, this);
     }
     
     
     /*Leer damit Abschluss übersprungen wird
     */
-    public void ausgaberek(){
+    public void ausgabeRek(){
     }
     
     
@@ -30,7 +30,7 @@ public abstract class LE {
     Der Abschluss wird nur aufgerufen wenn noch kein Knoten gefunden wurde, dessen
     Attribut größer ist als das des neuen Inhaltes.
     */
-    public LE sortierteinfrek(Inhalt i){
+    public LE sortiertEinfRek(Inhalt i){
         return new Knoten(i, this);
     }
 
@@ -40,4 +40,10 @@ public abstract class LE {
     public LE loeschenGRek(Inhalt i){
         System.out.println("Fehler: Knoten wurde nicht gefunden");
         return null;
+    }
+    
+    
+    public LE getNext(){
+        return null;
+    }
 }

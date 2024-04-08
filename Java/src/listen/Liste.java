@@ -28,7 +28,7 @@ public class Liste {
     /*Duch Rekursion und hier mit Notiz das einegfügt wurde
     */
     public void hinteneinf(Inhalt i){
-        erster = erster.hinteneinfrek(i);
+        erster = erster.hintenEinfRek(i);
         System.out.println("Objekt Nr."+i.getDatavar1()+ " wurde hinten eingefuegt");
     }
     
@@ -37,7 +37,7 @@ public class Liste {
     etwas (nicht) erfüllt ist. Hier mit Notiz das sortiert eingefügt wurde.
     */
     public void sortierteinf(Inhalt i){     //Sortierungskriterium dritte Variable
-        erster = erster.sortierteinfrek(i);
+        erster = erster.sortiertEinfRek(i);
         System.out.println("Objekt Nr."+i.getDatavar1()+ " wurde sortiert eingefuegt");
     }
     
@@ -45,11 +45,15 @@ public class Liste {
     /*Rekursiv die Liste durchlaufen
     */
     public void ausgabe(){
-        erster.ausgaberek();
+        erster.ausgabeRek();
     }
 
     
-    /* Um den ersten zu löschen, erster ersetzen durch erster.getNext();
+    /* Um den ersten zu löschen, erster ersetzen durch den next von ersten.
+    Man darf allerdings nicht erster.getNext() schreiben, da diese Methode nicht auf
+    LE anwendbar ist.
+    Am einfachsten sollte es sein getNext() auch in LE zu implementieren, um diese zu
+    verwenden, es bleibt allerdings fragwürdig ob dies eine sinnvolle Lösung ist.
     */
     public void loeschenErster(){
         erster = erster.getNext();
@@ -61,5 +65,6 @@ public class Liste {
     */
     public void loeschenGesucht(Inhalt g){
         erster = erster.loeschenGRek(g);
+    }
 }
 
