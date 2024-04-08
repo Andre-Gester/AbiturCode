@@ -45,7 +45,8 @@ public class Graph {
         adj = new int[anzahl][anzahl]; //erzeugt adj
         for (int i=0;i<anzahl;i++){ 
             for(int j=0;j<anzahl;j++){
-                adj[i][j]=0;    //Auffüllen der adj durch doppele Schleife um alle zu erreichen
+                adj[i][j]= -1;    //Auffüllen der adj durch doppele Schleife um alle zu erreichen
+                                    // mit -1 um zu zeigen, dass keine Verbindung besteht
             }
         }
         besucht = new boolean[anzahl];
