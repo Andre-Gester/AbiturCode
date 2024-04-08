@@ -54,5 +54,13 @@ public class Liste {
     public void loeschenErster(){
         erster = erster.getNext();
     }
+
+
+    /* Um einen gesuchten Inhalt zu löschen kann man dem vorherigen Knoten sagen, dass dieser
+    den übernächsten Knoten als next benutzen soll
+    */
+    public void loeschenGesucht(Inhalt g){
+        erster = erster.loeschenGRek(g);
+        System.out.println(g.ausgeben()+" wurde gelöscht");
 }
 
