@@ -2,8 +2,9 @@
 Eine Liste ist eine besondere Form eines Baumes (/Graphens), bei welcher jeder Knoten maximal ein
 Kind hat. Hierdurch ist eine Liste eine Art 'Reihe', in welcher Knoten nacheinander angeordnet sind.
 Die Wurzel wird als erster bezeichnet. 
-Bei einer Liste wird hinten eingefügt und vorne gelöscht, wie es einer Warteschlange am Supermarkt
-der Fall wäre. Analog hierzu wäre z.B. der Stapel, bei welchem vorne eingefügt und vorne gelöscht wird.
+Wir kennen zwei besondere Formen der Datenstruktur Liste:
+    1. Die Schlange, bei welcher hinten eingefügt wird und vorne gelöscht wird.
+    2. Der Stapel, bei welchem vorne eingefügt wird und vorne gelöscht wird.
  */
 package listen;
 
