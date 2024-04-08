@@ -61,6 +61,5 @@ public class Liste {
     */
     public void loeschenGesucht(Inhalt g){
         erster = erster.loeschenGRek(g);
-        System.out.println(g.ausgeben()+" wurde gelöscht");
 }
 
