@@ -3,8 +3,8 @@ Eine Liste ist eine besondere Form eines Baumes (/Graphens), bei welcher jeder K
 Kind hat. Hierdurch ist eine Liste eine Art 'Reihe', in welcher Knoten nacheinander angeordnet sind.
 Die Wurzel wird als erster bezeichnet. 
 Wir kennen zwei besondere Formen der Datenstruktur Liste:
-    1. Die Schlange, bei welcher hinten eingefügt wird und vorne gelöscht wird.
-    2. Der Stapel, bei welchem vorne eingefügt wird und vorne gelöscht wird.
+    1. Die Schlange, bei welcher hinten eingefügt wird und vorne gelöscht wird. First in, first out (FIFO)
+    2. Der Stapel, bei welchem vorne eingefügt wird und vorne gelöscht wird. First in, last out (FILO)
  */
 package listen;
 
