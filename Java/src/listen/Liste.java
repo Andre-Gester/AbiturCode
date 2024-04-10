@@ -49,6 +49,11 @@ public class Liste {
     }
 
     
+    public Inhalt suchen(int gesucht){
+        return erster.suchenrek(gesucht);
+    }
+    
+    
     /* Um den ersten zu löschen, erster ersetzen durch den next von ersten.
     Man darf allerdings nicht erster.getNext() schreiben, da diese Methode nicht auf
     LE anwendbar ist.

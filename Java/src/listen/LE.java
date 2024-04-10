@@ -25,6 +25,12 @@ public abstract class LE {
     }
     
     
+    public Inhalt suchenrek(int gesucht){
+        System.out.println("Objekt wurde nicht gefunden.");
+        return null;
+    }
+    
+    
     /*Der Abschluss gibt einen Knoten mit dem neuen Inhalt zurück, welcher dann
     von dem letzten Knoten eingefügt wird.
     Der Abschluss wird nur aufgerufen wenn noch kein Knoten gefunden wurde, dessen

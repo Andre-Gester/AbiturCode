@@ -50,7 +50,16 @@ public class Knoten extends LE {
         next.ausgabeRek();
     }
 
+    
+    @Override
+    public Inhalt suchenrek(int gesucht){
+        if (data.getDatavar1()==gesucht){
+            return this.data;
+        }
+        return next.suchenrek(gesucht);
+    }
 
+    
     /*Jeder Knoten muss schauen ob er selbst der gesuchte Inhalt ist, wenn dies der Fall ist soll
     der Knoten, statt sich selbst, seinen next zurückgeben, damit der Knoten selbst aus der Liste
     genommen wird. 
