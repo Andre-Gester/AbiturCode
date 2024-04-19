@@ -21,7 +21,7 @@ public class Automat {
         {
         switch (zustand){
             case 0:
-                if(c.equals('D'){
+                if(c=='D'){
                     zustand = 1;
                 }
                 break;
@@ -39,7 +39,7 @@ public class Automat {
                 }
                 break;
             case 3:
-                if(c.equals('B')){
+                if(c =='B'){
                     zustand = 4;
                 }
                 break;
@@ -50,7 +50,7 @@ public class Automat {
                 }
                 break;
             case 5: 
-                if (c.equals(' ')){
+                if (c ==' '){
                     zustand = 6;
                 }
                 break;
@@ -63,13 +63,19 @@ public class Automat {
                 // etc. etc. für alle Zustände und Übergänge
         }
         }
-boolean istWort(String wort)
+public boolean istWort(String wort)
     {
         zustand = 1;
-        for (int i=0; i<w.length(); i++)
+        for (int i=0; i<wort.length(); i++)
             {
-                charZustandAendern(w.charAt(i));
+                charZustandAendern(wort.charAt(i));
             }
-        return (zustand == 13);
-    }                    
+        return (zustand == 7/*eigentlich 13*/);
+    }
+
+public static void main (String[] args){
+    Automat a1 = new Automat();
+    System.out.println(a1.istWort("DE-BY 0"));
+    System.out.println(a1.istWort("DE-BX 2"));
+}
 }
